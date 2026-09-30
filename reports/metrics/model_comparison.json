@@ -1,0 +1,81 @@
+{
+  "logistic_regression": {
+    "model_name": "logistic_regression",
+    "metrics": {
+      "accuracy": 0.5617898062143429,
+      "precision": 0.0014347202295552368,
+      "recall": 0.4878048780487805,
+      "f1": 0.0028610256777054574,
+      "roc_auc": 0.523392487367316
+    },
+    "confusion_matrix": [
+      [
+        35705,
+        27840
+      ],
+      [
+        42,
+        40
+      ]
+    ],
+    "best_params": {
+      "model__C": 10.0,
+      "model__class_weight": "balanced"
+    },
+    "cv_best_score": 0.0020733393423961683,
+    "training_time_seconds": 29.3
+  },
+  "knn": {
+    "model_name": "knn",
+    "metrics": {
+      "accuracy": 0.9981140082040643,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.4978440475253757
+    },
+    "confusion_matrix": [
+      [
+        63507,
+        38
+      ],
+      [
+        82,
+        0
+      ]
+    ],
+    "best_params": {
+      "model__n_neighbors": 3,
+      "model__weights": "distance"
+    },
+    "cv_best_score": 0.001127615612908073,
+    "training_time_seconds": 416.95
+  },
+  "decision_tree": {
+    "model_name": "decision_tree",
+    "metrics": {
+      "accuracy": 0.668065443915319,
+      "precision": 0.0016581390941823005,
+      "recall": 0.4268292682926829,
+      "f1": 0.0033034450212364322,
+      "roc_auc": 0.5747082440137486
+    },
+    "confusion_matrix": [
+      [
+        42472,
+        21073
+      ],
+      [
+        47,
+        35
+      ]
+    ],
+    "best_params": {
+      "model__class_weight": "balanced",
+      "model__max_depth": 12,
+      "model__min_samples_leaf": 20
+    },
+    "cv_best_score": 0.003079784589917571,
+    "training_time_seconds": 195.07
+  }
+}
